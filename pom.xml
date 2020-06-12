@@ -39,6 +39,8 @@
                     <configuration>
                         <compilerArgs>
                             <arg>--enable-preview</arg>
+                            <arg>--add-modules</arg>
+                            <arg>jdk.incubator.foreign</arg>
                         </compilerArgs>
                     </configuration>
                 </plugin>
@@ -47,7 +49,7 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.0.0-M4</version>
                     <configuration>
-                        <argLine>--enable-preview -XX:+ShowCodeDetailsInExceptionMessages</argLine>
+                        <argLine>--enable-preview -XX:+ShowCodeDetailsInExceptionMessages --add-modules jdk.incubator.foreign</argLine>
                     </configuration>
                 </plugin>
             </plugins>
