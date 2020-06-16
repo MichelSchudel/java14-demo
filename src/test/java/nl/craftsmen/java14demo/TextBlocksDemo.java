@@ -5,22 +5,12 @@ import org.junit.jupiter.api.Test;
 
 public class TextBlocksDemo {
 
-
-
-//    String html = "<html>\n" +
-//                  "    <body>\n" +
-//                  "        <p class=\"title\">Hello, Craftsmen</p>\n" +
-//                  "    </body>\n" +
-//                  "</html>\n";
-
-
-
     String html = """
-                  <html>
-                      <body>
+                    <html>
+                       <body>
                           <p class="title">Hello, Craftsmen</p>
                       </body>
-                  </html>
+                    </html>
                   """;
 
     @Test

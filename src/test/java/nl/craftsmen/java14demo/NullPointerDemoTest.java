@@ -20,15 +20,10 @@ public class NullPointerDemoTest {
             this.pointer = pointer;
         }
     }
+
     @Test
-    public void when_nullpointer_then_show_detail_message() {
+    public void when_nullspointer_then_show_detail_message() {
         Pointer pointer = new Pointer(null);
-        try {
-            pointer.pointer.pointer = pointer;
-        } catch (NullPointerException e) {
-            assertThat(e.getMessage()).isEqualTo("""
-                    Cannot assign field "pointer" because "pointer.pointer" is null""");
-            System.out.println(e.getMessage());
-        }
+        System.out.println(pointer.pointer.pointer);
     }
 }

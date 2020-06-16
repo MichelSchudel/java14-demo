@@ -16,6 +16,7 @@ public class RecordsDemoTest {
     @Test
     public void test_record() {
         CoordinateRecord coordinateRecord = new CoordinateRecord(1,1);
+
         //you get the getters for free
         System.out.println(coordinateRecord.x());
         System.out.println(coordinateRecord.y());
