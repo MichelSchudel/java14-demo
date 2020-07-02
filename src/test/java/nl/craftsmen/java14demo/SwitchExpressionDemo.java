@@ -28,4 +28,16 @@ public class SwitchExpressionDemo {
         return result;
 
     }
+
+    @Test
+    public void enum_test(){
+        UserType userType = UserType.RETAIL;
+
+        String result = switch (userType) {
+            case RETAIL -> "retail";
+            case BUSINESS -> "business";
+        };
+
+        System.out.println(result);
+    }
 }
