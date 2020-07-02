@@ -30,6 +30,18 @@ public class SwitchExpressionDemo {
     }
 
     @Test
+    public void poly_test(){
+        UserType userType = UserType.RETAIL;
+
+        Object result = switch (userType) {
+            case RETAIL -> "retail";
+            case BUSINESS -> 12;
+        };
+
+        System.out.println(result);
+    }
+
+    @Test
     public void enum_test(){
         UserType userType = UserType.RETAIL;
 
